@@ -16,6 +16,7 @@ public class SiteBean {
     private String siteName;
     private String siteAddr;
     private long addUserId;
+    private String addUserName;
     private String desc;
     private String img;
     private String logo;
@@ -24,6 +25,14 @@ public class SiteBean {
     private int eval;
     private int released;
     private List<EvalBean> evals;
+
+    public String getAddUserName() {
+        return addUserName;
+    }
+
+    public void setAddUserName(String addUserName) {
+        this.addUserName = addUserName;
+    }
 
     public String getAddTime() {
         return addTime;

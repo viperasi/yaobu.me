@@ -17,32 +17,5 @@ import org.apache.commons.logging.LogFactory;
  */
 public class BaseImpl {
 
-    private final static Log log = LogFactory.getLog(BaseImpl.class);
-    Connection conn = null;
-    PreparedStatement st = null;
-    ResultSet rs = null;
-
-    public void close() {
-        try {
-            if (rs != null) {
-                rs.close();
-            }
-        } catch (SQLException e) {
-            log.error("关闭RS出错！！", e);
-        }
-        try {
-            if (st != null) {
-                st.close();
-            }
-        } catch (SQLException e) {
-            log.error("关闭ST出错！！", e);
-        }
-        try {
-            if (conn != null) {
-                conn.close();
-            }
-        } catch (SQLException e) {
-            log.error("关闭CONN出错！！", e);
-        }
-    }
+    
 }
